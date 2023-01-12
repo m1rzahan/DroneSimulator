@@ -302,39 +302,7 @@ def position(positionX, positionY,yawRate,positionZ,drone):
         0, math.radians(yawRate))
     drone.send_mavlink(msg)
 
-    # velocity(5, 0, 0,0,drone)
-    # time.sleep(2)
-    # velocity(0, 0, 0, 0, drone)
-    # time.sleep(2)
-    # velocity(0, 0, 0, -2, drone)
-    # time.sleep(2)
-    # velocity(0, 0, 60, 0, drone)
-    # time.sleep(2)
-    # position(5,0,0,-15,drone)
-    # while drone.location.local_frame.north<=4.90:
-    #      print("5 meter kuzey")
-    #      time.sleep(1)
-    # print("kuzey")
-    # time.sleep(1)
-    # position(5, 5, 0, -15, drone)
-    # while drone.location.local_frame.east <= 4.90:
-    #     print("5 meter dogu")
-    #     time.sleep(1)
-    # print("dogu")
-    # time.sleep(1)
-    # position(0, 5, 0, -15, drone)
-    # while drone.location.local_frame.north >= 0.1:
-    #     print("5 meter guney")
-    #     time.sleep(1)
-    # print("guney")
-    # time.sleep(1)
-    # position(0, 5, 0, -20, drone)
-    # while drone.location.local_frame.down <= 19.8:
-    #     print("5 meter yukarı")
-    #     time.sleep(1)
-    #     break
-    # print("yukarı")
-    # time.sleep(1)
+
 root.mainloop()
 #addMission()
 
